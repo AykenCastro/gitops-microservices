@@ -366,6 +366,8 @@ metadata:
   name: frontend-external
   labels:
     app: frontend
+  annotations:
+    argocd.argoproj.io/health.ignore: "true"
 spec:
   type: LoadBalancer
   selector:

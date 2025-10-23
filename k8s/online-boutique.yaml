@@ -677,6 +677,8 @@ metadata:
   name: loadgenerator
   labels:
     app: loadgenerator
+  annotations:
+    argocd.argoproj.io/health.ignore: "true"
 spec:
   selector:
     matchLabels:
